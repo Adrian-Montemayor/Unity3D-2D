@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a4cf1249fcf004b9412967c13b284f, type: 3}
+  m_Name: StartingState
+  m_EditorClassIdentifier: 
+  storyText: 'Festers, Everywhere. Armed mostrly with gas-powered rock flingers.
+
+    At
+    least 10 of them guarding the gangar door. Typical.
+
+
+
+    Could try punching
+    my way through. Or sneaking the long way to the emergency exit.
+
+
+
+    What should
+    I do?
+
+    1.- Take them head on - rush the 10 guards.
+
+    2.- Sneak my way
+    to the emergency exit.'
+  nextStates:
+  - {fileID: 11400000, guid: 35d57bbcfed71fe4496c42b7ce871188, type: 2}
+  - {fileID: 11400000, guid: aca91fd894e7aa34ea233d7caf27bc39, type: 2}
