@@ -10,9 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a4cf1249fcf004b9412967c13b284f, type: 3}
-  m_Name: Room 1
+  m_Name: A0. Introduction
   m_EditorClassIdentifier: 
-  storyText: Im in the room 1
+  storyText: 'Welcome to this game.
+
+
+    Its a choose ur own adventure. Be careful
+    what you wish for!
+
+
+
+    At each stage youll be asked to push a key on the keyboard.
+    for example 1 or 2 or 3.
+
+
+    At any point in time, push "q" to quit.'
   nextStates:
-  - {fileID: 11400000, guid: aca91fd894e7aa34ea233d7caf27bc39, type: 2}
   - {fileID: 11400000, guid: 3bd593c868fe58747840c9df981c3fe9, type: 2}
