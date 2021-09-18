@@ -10,25 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a4cf1249fcf004b9412967c13b284f, type: 3}
-  m_Name: X1. Game Over
+  m_Name: B6
   m_EditorClassIdentifier: 
-  storyText: 'Well, that clearly wan''t the right choice.
-
-
-    You failed.
-
-
-    No
-    parade for you.
-
-
-    Want to try again?
-
-
-    1. Yes this time I shall taste
-    glory
-
-    2. No, I''m going to go sulk for a while.'
+  storyText: B6
   nextStates:
+  - {fileID: 11400000, guid: 7fd1a43d550cdb44ea42174f56c31c51, type: 2}
   - {fileID: 11400000, guid: 3bd593c868fe58747840c9df981c3fe9, type: 2}
-  - {fileID: 11400000, guid: cceb4630bbc79b84ab6754c9432b948c, type: 2}
