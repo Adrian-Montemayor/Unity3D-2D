@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Fuel
+  - Rocket
+  - Obstacle
+  - Spawn
   layers:
   - Default
   - TransparentFX
