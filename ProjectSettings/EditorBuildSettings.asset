@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3D/SandBoxProjectBoost.unity
     guid: d7dfa3a19b1481a42a6be6e920c95be2
+  - enabled: 1
+    path: Assets/Scenes/3D/Level2.unity
+    guid: 5580be53d28d82640858d1d0729bd714
   m_configObjects: {}
