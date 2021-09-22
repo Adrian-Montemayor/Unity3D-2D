@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     AudioSource audioSource;
     [SerializeField]
     AudioClip mainEngine;
+    [SerializeField] ParticleSystem thrustParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -25,24 +26,42 @@ public class Movement : MonoBehaviour
     void Update()
     {
         ProccesThrust();
+        
         ProcessRotation();
     }
 
     private void ProccesThrust()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            rb.AddRelativeForce(Vector3.up * _speed * Time.deltaTime);
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(mainEngine);
-            }
+            ThrustProcess();
+
         }
-        else if(Input.GetKeyUp(KeyCode.Space))
+        else if(Input.GetKeyUp(KeyCode.UpArrow))
         {
-            audioSource.Stop();
+            StopThrusting();
         }
     }
+
+    void StopThrusting()
+    {
+        audioSource.Stop();
+        thrustParticle.Stop();
+    }
+
+    void ThrustProcess()
+    {
+        rb.AddRelativeForce(Vector3.up * _speed * Time.deltaTime);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+        }
+        if (!thrustParticle.isPlaying)
+        {
+            thrustParticle.Play();
+        }
+    }
+
     private void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.LeftArrow))

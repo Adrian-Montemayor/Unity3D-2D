@@ -216,6 +216,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &1233191151 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5883206234818899025, guid: bbfca0a8b03c56a4896bfad07d3dac25, type: 3}
+  m_PrefabInstance: {fileID: 2106958651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1762688753
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1627729812, guid: bbfca0a8b03c56a4896bfad07d3dac25, type: 3}
+      propertyPath: successParticle
+      value: 
+      objectReference: {fileID: 1233191151}
     - target: {fileID: 4710477941867876977, guid: bbfca0a8b03c56a4896bfad07d3dac25, type: 3}
       propertyPath: m_Name
       value: Rocket
