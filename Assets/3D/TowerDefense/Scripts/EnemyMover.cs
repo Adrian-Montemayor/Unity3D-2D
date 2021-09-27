@@ -7,12 +7,12 @@ public class EnemyMover : MonoBehaviour
     [SerializeField]
     List<WayPoint> path = new List<WayPoint>();
     [SerializeField]
-    float waitTime = 1f;
+    float waitTime = 2f;
     // Start is called before the first frame update
     void Start()
     {
         PrintWayPointName();
-        StartCoroutine("MoveRoutine");
+        StartCoroutine(MoveRoutine());
     }
 
     void PrintWayPointName()
@@ -25,7 +25,7 @@ public class EnemyMover : MonoBehaviour
 
     IEnumerator MoveRoutine()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(waitTime);
         foreach(var point in path)
         {
             transform.position = point.transform.position;
